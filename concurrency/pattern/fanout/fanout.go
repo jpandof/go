@@ -10,6 +10,9 @@ func main() {
 	fanOut()
 }
 
+// Este patrón se utiliza cuando tienes una cantidad de tareas que pueden realizarse en paralelo
+// y quieres distribuir esas tareas entre varias goroutines para aprovechar
+// la concurrencia y potencialmente acelerar el tiempo total de procesamiento.
 func fanOut() {
 	emps := 20
 	ch := make(chan string, emps)

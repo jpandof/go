@@ -9,6 +9,10 @@ func main() {
 	pooling()
 }
 
+// Este patrón es útil cuando se tiene una cantidad fija de trabajadores que pueden realizar tareas de manera concurrente
+// y un conjunto de tareas que se pueden realizar en cualquier orden.
+// Los trabajadores toman las tareas del canal a medida que están disponibles,
+// lo que permite que la carga de trabajo se distribuya entre ellos.
 func pooling() {
 	ch := make(chan string)
 

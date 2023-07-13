@@ -10,6 +10,8 @@ func main() {
 	waitForFinished()
 }
 
+// Este patrón es comúnmente utilizado en situaciones donde es necesario esperar la finalización de una o más tareas
+// antes de que el programa pueda proceder, garantizando que todas las tareas previas han finalizado su ejecución.
 func waitForFinished() {
 	ch := make(chan struct{})
 
