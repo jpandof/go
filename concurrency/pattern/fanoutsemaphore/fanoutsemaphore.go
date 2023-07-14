@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-
+	fanOutSemaphore()
 }
 
 // Este patrón es útil cuando quieres limitar la cantidad de gorutinas que se ejecutan al mismo tiempo.
